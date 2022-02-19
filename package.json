@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "server": "nodemon server",
+    "server": "nodemon server --ignore client",
     "client": "npm start --prefix jobify",
     "dev": "concurrently --kill-others-on-fail \" npm run server \" \"npm run client \" "
   },
@@ -23,6 +23,7 @@
     "http-status-codes": "^2.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.1",
+    "morgan": "^1.10.0",
     "validator": "^13.7.0"
   }
 }
